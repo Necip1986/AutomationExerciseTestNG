@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.automationexercise.utilities.Reporting"></listener>
+    </listeners>
+    <parameter name="browser" value="chrome"></parameter>
+
+    <test name="smoke test runner">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.automationexercise.testCases"></package>
+        </packages>
+
+    </test>
+</suite>
